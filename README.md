@@ -1,24 +1,53 @@
-# README
+# itsumono DB設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|nickname|string|null: false|
+|email|string|null: failse, unique: true|
+|users_groups_id|integer|foreign_key: true|
+### Association
+ - has_many :users_groups
+ - has_many :groups, through: :users_groups
 
-Things you may want to cover:
+## users_groupsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null :false, foreign_key: true|
+|group_id|integer|null :false, foreign_key: true|
+### Association
+ - belongs_to :user
+ - belongs_to :group
 
-* Ruby version
+## groupsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|groupname|string|null: false|
+|users_groups_id|integer|null: false, foreign_key: true|
+|item_id|integer|foreign_key: true|
+### Association
+ - has_many :users_groups
+ - has_many :users, through: :users_groups
+ - has_many :items
 
-* System dependencies
+## itemsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|item_name|string|null: false|
+|image|string|null: false|
+|capacity|string|null: false|
+|comment|text||
+|group_id|integer|null: false, foreign_key: true|
+|genre_id|integer|null: false, foreign_key: true|
+### Association
+ - belongs_to :group
+ - belongs_to :genre
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## genreテーブル
+|Column|Type|Options|
+|------|----|-------|
+|genre_name|string|null: false|
+|item_id|integer|foreign_key: true|
+### Association
+ - has_many :items
+ 
