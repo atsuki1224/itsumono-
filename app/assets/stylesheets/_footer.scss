@@ -1,0 +1,14 @@
+.footer {
+  height: 50px;
+  width: 100vw;
+  &__contents {
+    font-size: 20px;
+    justify-content: space-around;
+    &--contact {
+    }
+    &--weare {
+    }
+    &--logo {
+    }
+  }
+}
