@@ -1,0 +1,38 @@
+.header {
+  height: 50px;
+  width: 100vw;
+  background-color: white;
+  flex-direction: space-around;
+  display: flex;
+  &__logo {
+    display: flex;
+    flex-direction: space-around;
+    height: 30px;
+    width: 150px;
+    margin:auto;
+    padding-left: 30px;
+    &--icon {
+    }
+    &--title {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  &__contents {
+    width: 100vw;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 50px;
+    color: gray;
+    &--use {
+      margin-right: 20px;
+    }
+    &--signup {
+      margin-right: 40px;
+    }
+    &--login {
+      margin-right: 40px;
+    }
+  }
+}
