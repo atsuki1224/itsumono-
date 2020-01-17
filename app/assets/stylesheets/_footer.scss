@@ -1,14 +1,28 @@
 .footer {
   height: 50px;
   width: 100vw;
+  position: absolute;
+  bottom: 0;
   &__contents {
     font-size: 20px;
     justify-content: space-around;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: space-around;
     &--contact {
+      display: inline;
     }
     &--weare {
+      display: inline;
+    }
+    &--recruit {
+      display: inline;
+    }
+    &--terms {
+      display: inline;
     }
     &--logo {
+      display: inline;
     }
   }
 }

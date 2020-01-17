@@ -1,8 +1,9 @@
 .contents {
-  min-height: 100vh;
+  min-height: calc(100vh - 50px);
   min-width: 100vw;
   background-image: image-url('wood-3173282.jpg');
   background-size: cover;
+  position: relative;
   &__title {
     float: right;
     margin: 30px 100px 0px 0px;
