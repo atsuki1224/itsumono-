@@ -1,12 +1,15 @@
 .header
-  .header__logo
-    .header__logo--icon
+  =link_to "#" , :class => "header__logo" do
+    =image_tag 'hearts-1994273.png',:size => '30x30', :class => "header__logo--icon"
     .header__logo--title
       いつもの
   .header__contents
     .header__contents--use
+    =link_to "#" , :class => "header__contents--use" do
       使いかた
     .header__contents--signup
-      新登録
+    =link_to "#" , :class => "header__contents--signup" do
+      新規登録
     .header__contents--login
+    =link_to "#" , :class => "header__contents--login" do
       ログイン
