@@ -4,11 +4,19 @@
   background-image: image-url('wood-3173282.jpg');
   background-size: cover;
   &__title {
-    font-size: 100px;
-    color: white;
-  }
-  &__message {
-    font-size: 30px;
-    color: white;
+    float: right;
+    margin: 30px 100px 0px 0px;
+    &--main {
+      background-color: white;
+      font-size: 150px;
+      color: black;
+    }
+    &--sub {
+      background-color: white;
+      font-size: 30px;
+      color: black;
+      text-align: center;
+      margin-top: 10px;
+    }
   }
 }
