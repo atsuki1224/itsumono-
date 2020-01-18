@@ -1,29 +1,20 @@
-%h2 Sign up
-= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
-  = render "devise/shared/error_messages", resource: resource
-
-  .field
-    = f.label :nickname do
-      %em
-        最大6文字
-    %br/
-    = f.text_field :nickname, maxlength: "6"
-
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email
-  .field
-    = f.label :password
-    - if @validatable
-      %em
-        (#{@minimum_password_length} characters minimum)
-    %br/
-    = f.password_field :password, autocomplete: "new-password"
-  .field
-    = f.label :password_confirmation
-    %br/
-    = f.password_field :password_confirmation, autocomplete: "new-password"
-  .actions
-    = f.submit "Sign up"
-  = render "devise/shared/links"
+.registrationcontents
+  .resistrationcontents__dummy
+  %br/
+  .registrationcontents__title アカウントの作成
+  = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+    = render "devise/shared/error_messages", resource: resource
+    .field
+      = f.text_field :nickname, maxlength: "6" , class: "registrationcontents__field", placeholder: "ニックネーム(最大6文字)"
+    .field
+      = f.email_field :email , class: "registrationcontents__field" , placeholder: "メールアドレス"
+    .field
+      - if @validatable
+        %em
+          (#{@minimum_password_length} characters minimum)
+      = f.password_field :password, autocomplete: "new-password" , class: "registrationcontents__field" , placeholder: "パスワード"
+    .field
+      = f.password_field :password_confirmation, autocomplete: "new-password" , class: "registrationcontents__field" , placeholder: "パスワード(確認)"
+    .actions
+      = f.submit "アカウント作成" , class: "registrationcontents__submit"
+  -# = render "devise/shared/links"
