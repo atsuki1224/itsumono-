@@ -1,9 +1,10 @@
 .groupcontents
   .groupcontents__dummy
   .groupcontents__title
-    グループ作成
+    グループ編集
   .groupcontents__main
     .groupcontents__main--new
     =form_for @group do |f|
       = f.text_field :name, class: "groupcontents__main--field", placeholder: "グループ名"
-      = f.submit "グループ作成", class: "groupcontents__main--submit"
+      = f.submit "グループ編集", class: "groupcontents__main--submit"
+      = link_to "グループ削除", "/groups/#{@group.id}", method: :delete, class: "groupcontents__main--delete"
