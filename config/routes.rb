@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: "homes#index"
   get "homes/index" => "homes#index"
-  resouces :groups, only: [:new, :create]
+  resources :groups, only: [:new, :create]
 end
