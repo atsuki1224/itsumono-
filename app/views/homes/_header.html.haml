@@ -9,9 +9,9 @@
       使いかた
       -if user_signed_in?
         .header__contents--grouplist
-        =link_to "グループ一覧", destroy_user_session_path, method: :delete , :class => "header__contents--logout"
+        =link_to "グループ一覧", new_group_path, method: :GET , :class => "header__contents--grouplist"
         .header__contents--newgroup
-        =link_to "グループ作成", destroy_user_session_path, method: :delete , :class => "header__contents--logout"
+        =link_to "グループ作成", new_group_path, method: :GET , :class => "header__contents--newgroup"
         .header__contents--logout
         =link_to "ログアウト", destroy_user_session_path, method: :delete , :class => "header__contents--logout"
       - else

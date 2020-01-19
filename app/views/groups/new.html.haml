@@ -1,0 +1,4 @@
+.groupcontents
+=form_for @group do |f|
+  = f.text_field :name, class: "groupcontents__field", placeholder: "グループ名"
+  = f.submit "グループ作成", class: "groupcontents__submit"
