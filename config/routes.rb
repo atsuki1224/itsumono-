@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   root to: "homes#index"
   get "homes/index" => "homes#index"
   get "groups/index" => "groups#index"
-  # get "groups/:id/edit" => "groups#edit"
   delete "groups/:id" => "groups#destroy"
+  get "groups/:id/posts/index" => "posts#index"
   resources :groups
+  resources :posts
 end

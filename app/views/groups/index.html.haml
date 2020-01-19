@@ -5,5 +5,5 @@
   .groupcontents__main
     -@group.each do |group|
       .groupcontents__main--group
-        =link_to group.name, "#{group.id}/edit", method: :get, class: "groupcontents__main--group-name"
+        =link_to group.name, "#{group.id}/posts/index", method: :get, class: "groupcontents__main--group-name"
         =link_to "編集", "#{group.id}/edit", method: :get, class: "groupcontents__main--group-edit"
