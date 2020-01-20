@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_19_022743) do
+ActiveRecord::Schema.define(version: 2020_01_20_013727) do
 
   create_table "group_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "group_id"
@@ -28,6 +28,17 @@ ActiveRecord::Schema.define(version: 2020_01_19_022743) do
     t.index ["name"], name: "index_groups_on_name", unique: true
   end
 
+  create_table "posts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "name", null: false
+    t.text "image", null: false
+    t.text "capacity"
+    t.text "comment"
+    t.bigint "group_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["group_id"], name: "index_posts_on_group_id"
+  end
+
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -43,4 +54,5 @@ ActiveRecord::Schema.define(version: 2020_01_19_022743) do
 
   add_foreign_key "group_users", "groups"
   add_foreign_key "group_users", "users"
+  add_foreign_key "posts", "groups"
 end
