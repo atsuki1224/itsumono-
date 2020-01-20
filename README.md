@@ -1,5 +1,42 @@
 # itsumono DB設計
 
+アプリ名
+====
+### いつもの
+https://itsumono.herokuapp.com/
+  
+限られた時間、家族との時間を大切にしよう
+  
+## 概要
+"いつもの"は家庭で使用している日用品を分かりやすく共有することで  
+家族の誰でも間違えずに買い足しができるようにするツールです  
+  
+"夫にお使いを頼むと必ず間違えてしまう"  
+"共働きなのに日用品や食品の買い出しはいつお私が担当"  
+そんな意見が多いことにふと目がつきました  
+  
+共働き家庭が増えている現代、家事を夫婦で効率よく行えたら家族との大切な時間がより増えることでしょう  
+夫も家事に参加したいけれど"間違えるとかえって迷惑をかけてしまう"そんな意見もあると思います  
+  
+"いつもの"は日用品を共有することで、家族の時間い寄り添うことを目指します  
+## 機能一覧
+・ユーザー新規登録機能  
+・ユーザーログイン機能  
+・グループ作成機能  
+・グループ編集/削除機能  
+・アイテム投稿機能  
+
+## 使用している技術
+・Ruby 2.5.1  
+・Mysql2 0.5.2  
+・Heroku(mysql2を使用)  
+・scss(sass記法)  
+・haml  
+・pry-rails  
+・devise  
+・session
+
+
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -33,7 +70,7 @@
 ## itemsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|item_name|string|null: false|
+|name|string|null: false|
 |image|string|null: false|
 |capacity|string|null: false|
 |comment|text||
@@ -46,8 +83,7 @@
 ## genreテーブル
 |Column|Type|Options|
 |------|----|-------|
-|genre_name|string|null: false|
+|name|string|null: false|
 |item_id|integer|foreign_key: true|
 ### Association
  - has_many :items
- 
