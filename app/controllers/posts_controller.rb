@@ -2,6 +2,7 @@ class PostsController < ApplicationController
 
   def index
     session[:group_id] = params[:id]
+    @post = Post.where(group_id: session[:group_id])
   end
 
   def new
