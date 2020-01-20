@@ -3,6 +3,7 @@
 アプリ名
 ====
 ### いつもの
+https://itsumono.herokuapp.com/
   
 限られた時間、家族との時間を大切にしよう
   
