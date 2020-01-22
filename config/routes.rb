@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get "groups/index" => "groups#index"
   delete "groups/:id" => "groups#destroy"
   get "groups/:id/posts/index" => "posts#index"
-  post "posts/new" => "posts#create"
+  post "/posts" => "posts#create"
   resources :groups
   resources :posts
 end

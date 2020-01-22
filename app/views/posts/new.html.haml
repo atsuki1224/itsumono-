@@ -9,5 +9,5 @@
         = f.text_field :capacity, class: "postcontents__main--post-field", placeholder: "サイズ"
         = f.text_field :comment, class: "postcontents__main--post-field", placeholder: "詳細"
         = f.file_field :image, class: "postcontents__main--post-input", placeholder: "画像"
-        = f.hidden_field :group_id, value: session[:group_id]
-        = f.submit "追加", method: :post, class: "postcontents__main--post-submit"
+        -# = f.hidden_field :group_id, value: session[:group_id]
+        = f.submit "追加", class: "postcontents__main--post-submit"
