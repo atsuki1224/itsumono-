@@ -70,3 +70,5 @@ gem 'compass-rails', '3.1.0'
 gem 'sprockets', '3.7.2'
 gem "haml-rails", ">= 1.0", '<= 2.0.1'
 gem "devise"
+gem 'carrierwave'
+gem 'mini_magick'
