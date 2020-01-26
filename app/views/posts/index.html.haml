@@ -8,10 +8,15 @@
     .postcontents__main--item
       - @post.each do |post|
         .postcontents__main--item-content
-          = image_tag "/assets/item1.jpg", class: "postcontents__main--item-content-image"
+          = image_tag post.image_url, class: "postcontents__main--item-content-image"
           .postcontents__main--item-content-name
           = post.name
           .postcontents__main--item-content-capacity
           = post.capacity
           .postcontents__main--item-content-comment
           = post.comment
+          .edit-btn
+          = link_to "編集", "#{post.id}/edit"
+          = link_to "削除", "#{post.id}/destroy"
+
+
