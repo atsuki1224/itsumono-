@@ -39,15 +39,15 @@ https://itsumono.herokuapp.com/
 
 ## 機能説明
 トップページ
-<img src="https://github.com/atsuki1224/itsumono-/blob/master/top.png" width=50%>  
+<img src="https://github.com/atsuki1224/itsumono-/blob/readme_edit/top.png" width=50%>  
 ログイン
-<img src="https://github.com/atsuki1224/itsumono-/blob/master/login.png" width=50%>  
+<img src="https://github.com/atsuki1224/itsumono-/blob/readme_edit/login.png" width=50%>  
 簡単ログイン
-<img src="https://github.com/atsuki1224/itsumono-/blob/master/login_shortcut.png" width=50%>  
+<img src="https://github.com/atsuki1224/itsumono-/blob/readme_edit/login_shortcut.png" width=50%>  
 グループ作成
-<img src="https://github.com/atsuki1224/itsumono-/blob/master/group.png" width=50%>  
+<img src="https://github.com/atsuki1224/itsumono-/blob/readme_edit/group.png" width=50%>  
 アイテム一覧
-<img src="https://github.com/atsuki1224/itsumono-/blob/master/group.png" width=50%>  
+<img src="https://github.com/atsuki1224/itsumono-/blob/readme_edit/group.png" width=50%>  
 
 ## 使用している技術
 ・Ruby 2.5.1  
