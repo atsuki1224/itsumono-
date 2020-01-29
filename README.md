@@ -21,13 +21,13 @@ https://itsumono.herokuapp.com/
 "いつもの"は日用品を共有することで、家族の時間い寄り添うことを目指します  
 
 ## 工夫したポイント
-・進捗管理ツール「Trello」にて管理しつつ開発
-・使用したことのなかったHerokuを利用してのデプロイ
-・HerokuのデフォルトデータベースをpostgresqlからMysqlへ変更
-・投稿したアイテムはユーザーではなくグループに紐づけることでユーザー退会後も投稿が消えないようにした
-・sessionを利用してgroup_idを取得しアイテムと紐づけてデータベースに保存させている
-・開発の手間を短縮するために「簡単ログインボタン」を実装しログインをスムーズに行えるようにした
-・今までgithub desktopを使用していたが、ターミナル操作に慣れるためpull request以外はターミナルから操作した
+・進捗管理ツール「Trello」にて管理しつつ開発  
+・使用したことのなかったHerokuを利用してのデプロイ  
+・HerokuのデフォルトデータベースをpostgresqlからMysqlへ変更  
+・投稿したアイテムはユーザーではなくグループに紐づけることでユーザー退会後も投稿が消えないようにした  
+・sessionを利用してgroup_idを取得しアイテムと紐づけてデータベースに保存させている  
+・開発の手間を短縮するために「簡単ログインボタン」を実装しログインをスムーズに行えるようにした  
+・今までgithub desktopを使用していたが、ターミナル操作に慣れるためpull request以外はターミナルから操作した  
 
 ## 機能一覧
 ・ユーザー新規登録機能  
@@ -38,6 +38,16 @@ https://itsumono.herokuapp.com/
 ・アイテム投稿機能  
 
 ## 機能説明
+トップページ
+<img src="https://github.com/atsuki1224/itsumono-/blob/master/top.png" width=50%>  
+ログイン
+<img src="https://github.com/atsuki1224/itsumono-/blob/master/login.png" width=50%>  
+簡単ログイン
+<img src="https://github.com/atsuki1224/itsumono-/blob/master/login_shortcut.png" width=50%>  
+グループ作成
+<img src="https://github.com/atsuki1224/itsumono-/blob/master/group.png" width=50%>  
+アイテム一覧
+<img src="https://github.com/atsuki1224/itsumono-/blob/master/group.png" width=50%>  
 
 ## 使用している技術
 ・Ruby 2.5.1  
@@ -50,18 +60,20 @@ https://itsumono.herokuapp.com/
 ・session
 
 ## 今後実装したい機能
-・アイテムをジャンル別に表示させる機能
-・Google map APIを使用してアイテムと住所を紐づける
-　その商品が一番安く近所のスーパーを分かりやすく共有することができる
-・グループの検索機能
-・ユーザーの検索とグループへの招待機能
-・Javascriptを使用してページを遷移せずにジャンル毎にビューを切り替える
+・アイテムをジャンル別に表示させる機能  
+・Google map APIを使用してアイテムと住所を紐づける  
+　その商品が一番安く近所のスーパーを分かりやすく共有することができる  
+・グループの検索機能  
+・ユーザーの検索とグループへの招待機能  
+・Javascriptを使用してページを遷移せずにジャンル毎にビューを切り替える  
 
 # テスト
-・後ほど記入
+・後ほど記入  
+
 
 ## データベース設計
-![ER図](https://github.com/atsuki1224/itsumono-/blob/master/Entity%20Relationship%20Diagram.png)
+<img src="https://github.com/atsuki1224/itsumono-/blob/master/Entity%20Relationship%20Diagram.png" width=50%>
+
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
