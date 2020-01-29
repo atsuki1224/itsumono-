@@ -51,7 +51,7 @@ https://itsumono.herokuapp.com/
 <img src="https://github.com/atsuki1224/itsumono-/blob/readme_edit/group.png" width=50%>  
   
 アイテム一覧  
-<img src="https://github.com/atsuki1224/itsumono-/blob/readme_edit/group.png" width=50%>  
+<img src="https://github.com/atsuki1224/itsumono-/blob/readme_edit/item.gif" width=50%>  
   
 ## 使用している技術
 ・Ruby 2.5.1  
