@@ -41,14 +41,18 @@ https://itsumono.herokuapp.com/
 トップページ  
 <img src="https://github.com/atsuki1224/itsumono-/blob/readme_edit/top.png" width=50%>  
   
+  
 ログイン  
 <img src="https://github.com/atsuki1224/itsumono-/blob/readme_edit/login.png" width=50%>  
+  
   
 簡単ログイン  
 <img src="https://github.com/atsuki1224/itsumono-/blob/readme_edit/login_shortcut.gif" width=50%>  
   
+  
 グループ作成  
 <img src="https://github.com/atsuki1224/itsumono-/blob/readme_edit/group.png" width=50%>  
+  
   
 アイテム一覧  
 <img src="https://github.com/atsuki1224/itsumono-/blob/readme_edit/item.gif" width=50%>  
