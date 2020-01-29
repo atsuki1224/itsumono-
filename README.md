@@ -37,7 +37,8 @@ https://itsumono.herokuapp.com/
 ・devise  
 ・session
 
-
+## データベース設計
+Markdown: ![ER図](Entity Relationship Diagram.png"ER図")
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
