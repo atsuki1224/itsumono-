@@ -75,10 +75,6 @@ https://itsumono.herokuapp.com/
 ・ユーザーの検索とグループへの招待機能  
 ・Javascriptを使用してページを遷移せずにジャンル毎にビューを切り替える  
 
-# テスト
-・後ほど記入  
-
-
 ## データベース設計
 <img src="https://github.com/atsuki1224/itsumono-/blob/master/Entity%20Relationship%20Diagram.png" width=50%>
 
