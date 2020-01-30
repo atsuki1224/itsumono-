@@ -11,23 +11,23 @@ https://itsumono.herokuapp.com/
 "いつもの"は家庭で使用している日用品を分かりやすく共有することで  
 家族の誰でも間違えずに買い足しができるようにするツールです  
   
-"夫にお使いを頼むと必ず間違えてしまう"  
-"共働きなのに日用品や食品の買い出しはいつお私が担当"  
-そんな意見が多いことにふと目がつきました  
+"夫にお使いを頼むと間違ったものを買ってくる"  
+"共働きなのに日用品や食品の買い出しはいつも私が担当"  
+そんな意見が多いことに気がつきました  
   
-共働き家庭が増えている現代、家事を夫婦で効率よく行えたら家族との大切な時間がより増えることでしょう  
-夫も家事に参加したいけれど"間違えるとかえって迷惑をかけてしまう"そんな意見もあると思います  
+共働き家庭が増えている現代、家事を夫婦で効率よく行えたら家族との大切な時間が増えることでしょう  
+旦那さんも家事に参加したいけれど "間違えるとかえって迷惑をかけてしまう" そんな意見もあると思います  
   
-"いつもの"は日用品を共有することで、家族の時間い寄り添うことを目指します  
+"いつもの"は日用品を共有することで、家族の時間に寄り添うことを目指します  
 
 ## 工夫したポイント
-・進捗管理ツール「Trello」にて管理しつつ開発  
+・進捗管理ツール「Trello」にて進捗を管理  
 ・使用したことのなかったHerokuを利用してのデプロイ  
 ・HerokuのデフォルトデータベースをpostgresqlからMysqlへ変更  
 ・投稿したアイテムはユーザーではなくグループに紐づけることでユーザー退会後も投稿が消えないようにした  
 ・sessionを利用してgroup_idを取得しアイテムと紐づけてデータベースに保存させている  
 ・開発の手間を短縮するために「簡単ログインボタン」を実装しログインをスムーズに行えるようにした  
-・今までgithub desktopを使用していたが、ターミナル操作に慣れるためpull request以外はターミナルから操作した  
+・今までgithub desktopを使用していたが、ターミナル操作に慣れるため、pull request以外はターミナルから操作  
 
 ## 機能一覧
 ・ユーザー新規登録機能  
@@ -70,10 +70,10 @@ https://itsumono.herokuapp.com/
 ## 今後実装したい機能
 ・アイテムをジャンル別に表示させる機能  
 ・Google map APIを使用してアイテムと住所を紐づける  
-　その商品が一番安く近所のスーパーを分かりやすく共有することができる  
+　(最安値のスーパーを分かりやすく共有することができる)  
 ・グループの検索機能  
 ・ユーザーの検索とグループへの招待機能  
-・Javascriptを使用してページを遷移せずにジャンル毎にビューを切り替える  
+・Javascriptを使用してページを遷移せずにジャンル毎にビューを切り替える(SPA)  
 
 ## データベース設計
 <img src="https://github.com/atsuki1224/itsumono-/blob/master/Entity%20Relationship%20Diagram.png" width=50%>
@@ -85,10 +85,10 @@ https://itsumono.herokuapp.com/
 |email|string|null: failse, unique: true|
 |users_groups_id|integer|foreign_key: true|
 ### Association
- - has_many :users_groups
- - has_many :groups, through: :users_groups
+ - has_many :groups_users
+ - has_many :groups, through: :groups_users
 
-## users_groupsテーブル
+## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null :false, foreign_key: true|
@@ -100,12 +100,12 @@ https://itsumono.herokuapp.com/
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|groupname|string|null: false|
-|users_groups_id|integer|null: false, foreign_key: true|
+|name|string|null: false|
+|groups_users_id|integer|null: false, foreign_key: true|
 |item_id|integer|foreign_key: true|
 ### Association
- - has_many :users_groups
- - has_many :users, through: :users_groups
+ - has_many :groups_users
+ - has_many :users, through: :groups_users
  - has_many :items
 
 ## itemsテーブル
