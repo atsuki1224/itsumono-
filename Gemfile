@@ -72,3 +72,5 @@ gem "haml-rails", ">= 1.0", '<= 2.0.1'
 gem "devise"
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'cloudinary'
+gem 'dotenv-rails'

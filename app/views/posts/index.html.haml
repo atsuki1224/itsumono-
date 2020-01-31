@@ -8,7 +8,7 @@
     .postcontents__main--item
       - @post.each do |post|
         .postcontents__main--item-content
-          = image_tag post.image_url, class: "postcontents__main--item-content-image"
+          = image_tag post.image.to_s, class: "postcontents__main--item-content-image"
           .postcontents__main--item-content-name
           = post.name
           .postcontents__main--item-content-capacity

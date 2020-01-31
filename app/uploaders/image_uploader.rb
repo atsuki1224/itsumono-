@@ -1,10 +1,17 @@
 class ImageUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
+  include Cloudinary::CarrierWave
   include CarrierWave::MiniMagick
 
+  CarrierWave.configure do |config|
+    config.cache_storage = :file
+   end
+   
+  process :convert => 'jpg' # 画像の保存形式
+  process :tags => ['image'] 
   # Choose what kind of storage to use for this uploader:
-  storage :file
+  # storage :file
   # storage :fog
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
