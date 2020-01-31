@@ -1,0 +1,22 @@
+.postcontents
+  .postcontents__main
+    .postcontents__main--dummy
+    .postcontents__main--add-item
+      = link_to "アイテムを追加する", new_post_path ,method: :get
+    .postcontents__main--item-list
+      "いつもの"一覧
+    .postcontents__main--item
+      - @post.each do |post|
+        .postcontents__main--item-content
+          = image_tag post.image.to_s, class: "postcontents__main--item-content-image"
+          .postcontents__main--item-content-name
+          = post.name
+          .postcontents__main--item-content-capacity
+          = post.capacity
+          .postcontents__main--item-content-comment
+          = post.comment
+          .edit-btn
+          = link_to "編集", "#{post.id}/edit"
+          = link_to "削除", "#{post.id}/destroy"
+
+

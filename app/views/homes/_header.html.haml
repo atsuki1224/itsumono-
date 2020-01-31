@@ -1,0 +1,21 @@
+.header
+  =link_to "/homes/index" , :class => "header__logo" do
+    =image_tag 'hearts-1994273.png',:size => '30x30', :class => "header__logo--icon"
+    .header__logo--title
+      いつもの
+  .header__contents
+    .header__contents--use
+    =link_to "/homes/how_to_use", class: "header__contents--use" do
+      使い方
+      -if user_signed_in?
+        .header__contents--grouplist
+        =link_to "グループ一覧", "/groups/index", method: :GET , :class => "header__contents--grouplist"
+        .header__contents--newgroup
+        =link_to "グループ作成", new_group_path, method: :GET , :class => "header__contents--newgroup"
+        .header__contents--logout
+        =link_to "ログアウト", destroy_user_session_path, method: :delete , :class => "header__contents--logout"
+      - else
+        .header__contents--signup
+        =link_to "新規登録" , new_user_registration_path, method: :get , :class => "header__contents--signup"
+        .header__contents--login
+        =link_to "ログイン" , new_user_session_path, method: :get , :class => "header__contents--login"
