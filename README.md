@@ -8,9 +8,9 @@ https://itsumono.herokuapp.com/
 限られた時間、家族との時間を大切にしよう
   
 ## 目的
-・Herokuを使用したデプロイ
-・cloudinaryを使用した外部ストレージの設定
-・Rialsの復習
+・Herokuを使用したデプロイ  
+・cloudinaryを使用した外部ストレージの設定  
+・Rialsの復習  
 
 ## 概要
 "いつもの"は家庭で使用している日用品を分かりやすく共有することで  
