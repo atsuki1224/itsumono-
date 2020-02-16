@@ -1,4 +1,6 @@
+
 .contents {
+  font-family: 'Noto Sans JP', sans-serif;
   min-height: calc(100vh - 100px);
   min-width: 100vw;
   background-image: image-url('wood-3173282.jpg');
@@ -9,14 +11,16 @@
     float: right;
     margin: 30px 100px 0px 0px;
     &--main {
-      background-color: white;
-      font-size: 150px;
-      color: black;
-      border-radius: 10px;
-      opacity: 0.9;
+      // background-color: rgba(203, 232, 241, 0.9);
+      // box-shadow: 4px 4px 6px gray;
+      // font-size: 150px;
+      // color: black;
+      // border-radius: 10px;
+      // opacity: 0.9;
     }
     &--sub {
-      background-color: white;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 4px 4px 6px gray;
       font-size: 30px;
       color: black;
       text-align: center;
@@ -24,8 +28,19 @@
       border-radius: 10px;
       opacity: 0.8;
     }
+    &--how {
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 4px 4px 6px gray;
+      font-size: 30px;
+      color: black;
+      text-align: left;
+      margin-top: 10px;
+      border-radius: 10px;
+      opacity: 0.8;
+    }
     &--howto {
-      background-color: white;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 4px 4px 6px gray;
       font-size: 30px;
       color: black;
       text-align: center;
@@ -34,8 +49,9 @@
       opacity: 0.8;
     }
     &--instractions {
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 4px 4px 6px gray;
       text-align: left;
-      background-color: white;
       font-size: 30px;
       color: black;
       border-radius: 10px;

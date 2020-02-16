@@ -1,5 +1,6 @@
 // 新規登録
 .registrationcontents {
+  font-family: 'Noto Sans JP', sans-serif;
   height: calc(100vh - 50px);
   width: 100vw;
   background-image: image-url('back2.jpg');
@@ -17,12 +18,14 @@
     max-width: 500px;
     border-radius: 10px;
     margin: 0 auto;
+    box-shadow: 4px 4px 6px black;
   }
   &__field {
     height: 40px;
     width: 300px;
     text-align: center;
     margin-top: 30px;
+    box-shadow: 4px 4px 6px black;
   }
   &__submit {
     font-size: 25px;
@@ -31,6 +34,7 @@
     width: 150px;
     margin-top:30px;
     margin-bottom: 30px;
+    box-shadow: 4px 4px 6px black;
   }
   .new_user {
   margin-top: 70px;
@@ -40,6 +44,7 @@
 
 // ログイン
 .sessioncontents {
+  font-family: 'Noto Sans JP', sans-serif;
   height: calc(100vh - 50px);
   width: 100vw;
   background-image: image-url('back2.jpg');
@@ -57,12 +62,14 @@
     max-width: 500px;
     border-radius: 10px;
     margin: 0 auto;
+    box-shadow: 4px 4px 6px black;
   }
   &__field {
     height: 40px;
     width: 300px;
     text-align: center;
     margin-top: 30px;
+    box-shadow: 4px 4px 6px black;
   }
   &__submit {
     font-size: 25px;
@@ -71,6 +78,7 @@
     width: 150px;
     margin-top:30px;
     margin-bottom: 30px;
+    box-shadow: 4px 4px 6px black;
   }
   .new_user {
     margin-top: 70px;
