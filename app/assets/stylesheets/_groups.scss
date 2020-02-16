@@ -10,6 +10,7 @@
   }
   &__title {
     text-align: center;
+    box-shadow: 4px 4px 6px black;
     font-weight: bold;
     font-size: 30px;
     background-color: white;
@@ -26,9 +27,10 @@
       max-width: 500px;
       background-color: white;
       font-size: 20px;
-      margin: 0 auto; 
+      margin: 0 auto;
       border-radius: 10px;
       margin-bottom: 20px;
+      box-shadow: 4px 4px 6px black;
     }
       &--field {
         min-height: 40px;
@@ -36,6 +38,7 @@
         margin-top: 30px;
         margin: 0 auto;
         display: block;
+        box-shadow: 4px 4px 6px black;
       }
       &--delete {
         display: block;
