@@ -1,5 +1,6 @@
 // 新規登録
 .registrationcontents {
+  font-family: 'Noto Sans JP', sans-serif;
   height: calc(100vh - 50px);
   width: 100vw;
   background-image: image-url('back2.jpg');
@@ -40,6 +41,7 @@
 
 // ログイン
 .sessioncontents {
+  font-family: 'Noto Sans JP', sans-serif;
   height: calc(100vh - 50px);
   width: 100vw;
   background-image: image-url('back2.jpg');
