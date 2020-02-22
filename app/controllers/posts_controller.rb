@@ -15,8 +15,11 @@ class PostsController < ApplicationController
     logger.info("params : #{params[:post]}")
     @post = Post.new(post_params)
     @post.group_id = session[:group_id]
-    @post.save
-    redirect_to root_path
+    if @post.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
   def edit
